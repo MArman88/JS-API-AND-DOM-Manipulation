@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <div id="search-bar" class="container my-5 text-center">
+        <h2 class="text-uppercase">
+            Search Foods
+        </h2>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6">
+                <div class="d-flex flex-column flex-md-row px-2 gap-2 align-items-center">
+                    <input type="text" id="search-box" placeholder="What are you looking for?"
+                        class="form-text w-100 rounded" style="height: 36px;">
+                    <button id="search-btn" class="flex-shrink-0 btn btn-success shadow-none text-uppercase"
+                        style="height: 36px;">Search</button>
+                </div>
+            </div>
+        </div>
+        <div id="error-div" class="text-danger">
+
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <div id="food-list"
+            class="d-flex flex-column flex-md-row gap-2 flex-wrap align-items-center justify-content-center">
+
+
+        </div>
+    </div>
+
+    <div id="toast" class="d-none p-2 position-fixed bottom-0 start-50 rounded-2 shadow bg-info"
+        style="transform: translate(-50%, -74px) !important;">
+        <i class="fa fa-spinner"></i>
+        <span id="toast-body" class="my-auto text-dark text-uppercase">
+            Please Wait
+        </span>
+
+    </div>
+
+    <div id="detail-div-container" class="detail-container-hide">
+        <div id="detail-div">
+
+        </div>
+
+    </div>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
